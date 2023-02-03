@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  background-color: #FEFFFE;
+  color: #2C3649;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header {
+  border-bottom: 1px solid #E3E8F1;
+  padding: 1rem 0;
+}
+
+.Header-Title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+main {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Main-Add Main-List";
+}
+
+.Main-Add {
+  grid-area: Main-Add;
+}
+
+.Main-Add-Title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.Main-Add-Form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.Main-Add-Form-Input {
+  padding: 0.75rem;
+  border: 1px solid #E3E8F1;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.Main-Add-Form-Button {
+  padding: 0.75rem;
+  border: 1px solid #E3E8F1;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  background-color: #3082CF;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.Main-Add-Form-Button:hover {
+  background-color: #385999;
+  transition: 0.5s ease;
+}
+
+.Main-List {
+  grid-area: Main-List;
+}
+
+.Main-List-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.Main-List-ul li {
+  border-bottom: 1px solid #E3E8F1;
+  border-left: 1px solid #E3E8F1;
+  border-right: 1px solid #E3E8F1;
+  padding: 1rem;
+  background-color: #EDF2F7;
+}
+
+.Main-List-ul li:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top: 1px solid #E3E8F1;
+  border-bottom: 1px solid #E3E8F1;
+
+}
+
+.Main-List-ul li:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-right: 1px solid #E3E8F1;
+  border-left: 1px solid #E3E8F1;
+  border-bottom: 1px solid #E3E8F1;
+}
+
+.Main-List-Title {
+  font-size: 1rem;
+  font-weight: 500;
+}
