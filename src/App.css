@@ -120,13 +120,24 @@ main {
   cursor: pointer;
   color: rgb(99, 106, 119);
   margin: 0 auto;
+  opacity: 0.8;
+}
+
+.clear-button:hover {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.item {
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .Main-List-ul li {
   border-bottom: 1px solid #E3E8F1;
   border-left: 1px solid #E3E8F1;
   border-right: 1px solid #E3E8F1;
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 1rem;
   background-color: #EDF2F7;
 }
 
