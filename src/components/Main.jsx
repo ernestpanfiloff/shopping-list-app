@@ -68,17 +68,17 @@ export default function Main() {
                     </h2>
                     <ul class="Main-List-ul">
                         {list.map((item, index) => (
-                            <li key={index}>
-                                {item.item}
-                                <span class="badge bg-primary rounded-pill">
+                            <li key={index} className="flex">
+                                <div className="item">{item.item}</div>
+                                <div><span class="badge">
                                     {item.quantity}
-                                </span>
+                                </span></div>
                             </li>
                         ))}
                     </ul>
                     <div class="text-center">
                         {list.length > 0 && (
-                            <button type="button" class="btn btn-sm mt-1" onClick={clearList}>
+                            <button type="button" class="clear-button" onClick={clearList}>
                                 Clear shopping list
                             </button>
                         )}
